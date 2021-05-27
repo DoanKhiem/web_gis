@@ -1,0 +1,122 @@
+html, body {
+    margin: 0;
+    /* padding: 0; */
+    width: 100%;
+    height: 100%;
+}
+.map{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  /* border: 1px solid black; */
+}
+#livesearch{
+    max-height: 200px;
+    overflow: auto;
+
+}
+.ol-popup-closer{
+    color: red;
+}
+.input:focus-visible{
+    outline: none;
+}
+.input {
+    border: 2px solid #422f09;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 15px;
+}
+
+.check, .form, .chu-thich, .ol-popup, .check-radio, .info{
+    position: absolute;
+    z-index: 999;
+}
+form.form {
+    top: 10px;
+    left: 10px;
+}
+.info{
+    bottom: 10px;
+    right: 20px;
+}
+.chu-thich{
+    background-color: #fff;
+    bottom: 0px;
+    padding: 5px 10px;
+    left: 0px;
+}
+.chu-thich h4{
+    font-family: monospace;
+    font-size: 14px;
+    color: #17140e;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.chu-thich div{
+    float: left;
+}
+.check{
+    background: cornsilk;
+    right: 0;
+    padding: 5px 20px;
+    top: 0;
+}
+.check-radio{
+    right: 10px;
+    top: 80px;
+}
+.abc h4{
+    color: #edac2b;
+    font-size: 16px;
+    margin: 0;
+    font-family: monospace;
+}
+.ol-popup {
+    position: absolute;
+    background-color: white;
+    -webkit-filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+    bottom: 12px;
+    left: -50px;
+    min-width: 280px;
+}
+
+.ol-popup:after,
+.ol-popup:before {
+    top: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.ol-popup:after {
+    border-top-color: white;
+    border-width: 10px;
+    left: 48px;
+    margin-left: -10px;
+}
+
+.ol-popup:before {
+    border-top-color: #cccccc;
+    border-width: 11px;
+    left: 48px;
+    margin-left: -11px;
+}
+
+.ol-popup-closer {
+    text-decoration: none;
+    position: absolute;
+    top: 2px;
+    right: 8px;
+}
+
+.ol-popup-closer:after {
+    content: "x";
+ }
