@@ -145,10 +145,10 @@ var overlay = new ol.Overlay(({
 				$("#popup-content").html(content);
 
 			// }
-	        // var vectorSource = new ol.source.Vector({
-	        //  features: (new ol.format.GeoJSON()).readFeatures(n)
-	       	// 	});
-	        // vectorLayer.setSource(vectorSource);
+	        var vectorSource = new ol.source.Vector({
+	         features: (new ol.format.GeoJSON()).readFeatures(n)
+	       		});
+	        vectorLayer.setSource(vectorSource);
 	      }
 	    })
 	  }

@@ -11,9 +11,21 @@ html, body {
   /* border: 1px solid black; */
 }
 #livesearch{
-    max-height: 200px;
+    border-radius: 0px 0px 10px 10px;
+    border: 2px solid #bdb5b5 !important;
+    max-height: 250px;
+    background: #fff;
     overflow: auto;
-
+}
+.xem{
+    /* padding: 9px; */
+    color: chocolate;
+    text-decoration: none;
+    display: inline-block;
+    margin: 1px 10px;
+    font-family: monospace;
+    font-size: 13px;
+    font-weight: bold;
 }
 .ol-popup-closer{
     color: red;
@@ -22,10 +34,14 @@ html, body {
     outline: none;
 }
 .input {
-    border: 2px solid #422f09;
-    border-radius: 10px;
+    border: 2px solid #bdb5b5;
+    border-radius: 10px 10px 0px 0px;
     padding: 5px 10px;
-    font-size: 15px;
+    width: 302px;
+    font-weight: bold;
+    color: chocolate;
+    font-family: monospace;
+    font-size: 14px;
 }
 
 .check, .form, .chu-thich, .ol-popup, .check-radio, .info{
@@ -57,10 +73,13 @@ form.form {
     float: left;
 }
 .check{
-    background: cornsilk;
+    background: rgba(0,60,136,.7);
     right: 0;
     padding: 5px 20px;
     top: 0;
+    font-size: 16px;
+    font-family: monospace;
+    color: #fff;
 }
 .check-radio{
     right: 10px;

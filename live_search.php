@@ -11,14 +11,15 @@
         // var_dump($tong_so_ket_qua);die();
         if ($tong_so_ket_qua > 0) {
             while ($dong = pg_fetch_array($result, null, PGSQL_ASSOC)) {
-                $link = "<a href='javascript:void(0);' onClick='di_den_diem(".$dong['x'].",".$dong['y'].");'>xem</a>";
-                print("Hiện trạng sử dụng: ".$dong["txtmemo"]."| Diện tích: ".$dong['shape_area']." " .$link. "</br>");
+                $link = "<a href='javascript:void(0);' class='xem' onClick='di_den_diem(".$dong['x'].",".$dong['y'].");'>";
+                $link1 = "</a>";
+                print($link."Loại đất: ".$dong["txtmemo"]." | Diện tích: ".$dong['shape_area']." " .$link1. "</br>");
             }
         } else {
-            print("Không có kết quả");
+            print("<span class='xem'>Không có kết quả</span>");
         }
     } else {
-    	echo "Không có kết quả";
+    	echo "<span class='xem'>Không có kết quả</span>";
     }
 
 ?>
